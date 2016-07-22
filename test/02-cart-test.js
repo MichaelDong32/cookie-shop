@@ -9,7 +9,7 @@ test('Cart test works', function(t) {
 test('Get full cart for user id', function(t) {
 	cart.getUserFullCart(1)
 		.then(function(data){
-			console.log('user:',data)
+			console.log('user Cart:',data)
 			t.ok(1, 'Got data')
 		})
 		.catch(function(error){
