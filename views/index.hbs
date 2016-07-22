@@ -1,2 +1,18 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<header class="banner">
+	<img src="https://image.freepik.com/free-icon/grocery-shopping-cart_318-39788.jpg"  />
+<h1>The Cookie Store</h1>
+</header>
+
+<div class="all-products">
+	{{#each this.products}}
+	<div class="product">
+		<img src="{{image_url}}" />
+
+		<div class="product-info">
+			<h2>{{name}}</h2>
+			<p>{{description}}</p>
+			<h3>${{price}}</h3>
+		</div>
+	</div>
+	{{/each}}
+</div>
