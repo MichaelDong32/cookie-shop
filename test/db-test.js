@@ -42,3 +42,15 @@ test ('Get user cart from db', function(t){
 		})
 	t.end()
 })
+
+test ('Get full cart from db', function(t){
+	db.getCart(1)
+		.then(function(data){
+			console.log(data)
+			t.ok(1)
+		})
+		.catch(function(error){
+			t.ok(false,error)
+		})
+	t.end()
+})
