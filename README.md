@@ -13,7 +13,7 @@
 - Splash page, products. "/"
 - Login. "/login"
 - Create Account. "/users/new"
-- Cart. "/users/:id/cart"
+- Cart. "/cart"
 - Order complete. "/complete"
 
 ## Tech
