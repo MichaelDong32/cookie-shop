@@ -9,3 +9,5 @@ router.get('/', function(req, res) {
 router.post('/cart/:productId', function(req, res) {
 	// add an item to the cart
 })
+
+module.exports = router;

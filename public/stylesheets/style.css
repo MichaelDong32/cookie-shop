@@ -1,8 +1,52 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
 }
 
 a {
   color: #00B7FF;
 }
+
+.banner {
+	display: flex;
+	height: 120px;
+	background-color: red;
+}
+
+.banner img {
+	width: 30px;
+	height: 30px;
+}
+
+.banner h1 {
+	width: 30px;
+}
+
+.all-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+	max-width: 25%;
+  width: 300px;
+  height: 250px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+
+}
+
+.product img {
+	border-radius: 5%;
+	border: 1px solid black;
+}
+
