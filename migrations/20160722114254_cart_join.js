@@ -2,8 +2,8 @@
 exports.up = function(knex, Promise) {
 	console.log('create table')
 	return knex.schema.createTableIfNotExists('cart_join', function(table){
-		table.string('cart_id')
-		table.string('product_id')
+		table.integer('cart_id')
+		table.integer('product_id')
 		})
 };
 
