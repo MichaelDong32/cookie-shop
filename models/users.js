@@ -4,7 +4,9 @@ function getUser(email,password) {
 	return new Promise(function(resolve, reject) {
 		db.getUserByEmail(email)
 			.then(function(user) {
-
+				if (!user[0]){
+					reject(false)
+				}
 				if(user[0].password == password) {
 					resolve(user[0])
 				}else{
