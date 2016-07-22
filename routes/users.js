@@ -10,8 +10,8 @@ router.get('/new', function(req, res) {
 	res.render('newUser', {})
 })
 
-router.get('/:id/cart', function(req, res) {
-	res.render('shoppingCart', {/* the products in the cart */})
+router.post('/', function(req, res) {
+	// add new user to db
 })
 
 module.exports = router;
