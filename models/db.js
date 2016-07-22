@@ -11,6 +11,10 @@ function getUserData (id) {
 	return knex.select().table('users').where({id})
 }
 
+function getUserByEmail (email) {
+	return knex.select().table('users').where({email})
+}
+
 function getUserCart (id) {
 	return knex.select().table('cart').where({user_id:id, complete:false})
 }
@@ -22,6 +26,7 @@ function getCart(id) {
 module.exports = {
 	getAllProducts,
 	getUserData,
+	getUserByEmail,
 	getUserCart,
 	getCart
 }
