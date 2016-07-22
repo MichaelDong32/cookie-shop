@@ -18,3 +18,27 @@ test('Get products from db', function(t) {
     })
 	t.end()
 })
+
+test('Get user data from db', function(t){
+	db.getUserData(1)
+		.then(function(data){
+			console.log(data)
+			t.ok(1)
+		})
+		.catch(function(error){
+			t.ok(false,error)
+		})
+	t.end()
+})
+
+test ('Get user cart from db', function(t){
+	db.getUserCart(2)
+		.then(function(data){
+			console.log(data)
+			t.ok(1)
+		})
+		.catch(function(error){
+			t.ok(false,error)
+		})
+	t.end()
+})
